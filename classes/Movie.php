@@ -4,9 +4,8 @@ class Movie{
     private $title;
     private $language;
     
-    public function __costruct($_title,$_language){
+    public function __construct($_title){
         $this->$title = $_title;
-        $this->$language = $_language;
     }
 
     public function getTitle(){
