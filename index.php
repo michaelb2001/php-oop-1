@@ -3,8 +3,8 @@
 
 require_once __DIR__."/classes/Movie.php";
 
-$film_1= new Movie("la banda dei babbi natale");
-$film_2= new Movie("chiedimi se sono felice");
+$film_1= new Movie("la banda dei babbi natale","it");
+$film_2= new Movie("chiedimi se sono felice","it");
 
 ?>
 
@@ -17,7 +17,7 @@ $film_2= new Movie("chiedimi se sono felice");
     <title>movies</title>
 </head>
 <body>
-    <h2>primo film: <?php echo $film_1->getTitle() ?></h1>
-    <h2>primo film: <?php echo $film_2->getTitle() ?></h1>
+    <h2>primo film: <?php echo $film_1->getTitle()?></h1>
+    <h2>secondo film: <?php echo $film_2->getTitle() ?></h1>
 </body>
 </html>
